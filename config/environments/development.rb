@@ -34,4 +34,8 @@ Firehoseapp::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  #when we send mail make links to go to the right place
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
 end
