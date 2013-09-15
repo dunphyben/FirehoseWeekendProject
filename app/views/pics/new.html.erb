@@ -7,10 +7,11 @@
 
 <%= simple_form_for @pic do |f| %>
 	<%= f.input :hour %>
+	<%= f.input :image, :as => :file %>
 	<%= f.input :emotion %>
 	<%= f.input :learned %>
 
-	<%= submit_tag "Create" %>
+	<%= submit_tag "Create", :class => 'btn-primary btn btn-large' %>
 
 <% end %>
 </div>
