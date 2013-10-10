@@ -18,8 +18,8 @@ development:
   database: firehoseapp_development
   pool: 5
   host: localhost
-  #username: firehoseapp
-  #password:
+  username: postgres
+  password: password
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -45,8 +45,8 @@ test:
   database: firehoseapp_test
   pool: 5
   host: localhost
-  #username: firehoseapp
-  #password:
+  username: postgres
+  password: password
 
 production:
   adapter: postgresql
@@ -54,5 +54,5 @@ production:
   database: firehoseapp_production
   pool: 5
   host: localhost
-  #username: firehoseapp
-  #password:
+  username: postgres
+  password: password
